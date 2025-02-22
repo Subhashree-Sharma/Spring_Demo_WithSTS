@@ -22,5 +22,11 @@ public class HelloController {
         //This must match a Thymeleaf template (hello.html)
         return "hello";
     }
+
+    //UC_03
+    @GetMapping("/UC3")
+    public String sayHelloByRestCall() {
+        return "Hello from BridgeLabz";
+    }
 }
 
